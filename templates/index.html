@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Python Calculator</h2>
+        <form method="post">
+            <input type="text" name="expression" placeholder="Enter expression" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <h3>Result: {{ result }}</h3>
+    </div>
+</body>
+</html>
